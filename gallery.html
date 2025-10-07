@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Brew & Beans - Gallery</title>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#2563EB' } } } }
+  </script>
+  <link rel='stylesheet' href='assets/css/style.css'>
+</head>
+<body class='bg-background text-text font-body'>
+  <!-- Header -->
+  <header class='fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md border-b border-white/40 shadow-lg z-50'>
+    <div class='max-w-7xl mx-auto px-4 py-3 flex items-center justify-between'>
+      <a href='index.html' class='flex items-center space-x-2'>
+        <img src='assets/images/logo.png' alt='Brew & Beans' class='h-9 w-9'>
+        <span class='text-xl font-semibold' style="font-family: 'Inter', sans-serif;">Brew & Beans</span>
+      </a>
+      <nav class='hidden md:flex space-x-6'>
+        <a href='index.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Home</a>
+        <a href='menu.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Menu</a>
+        <a href='locations.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Locations</a>
+        <a href='gallery.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Gallery</a>
+        <a href='contact.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class='pt-28'>
+    <section class='max-w-7xl mx-auto px-4 py-6'>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+        <!-- Gallery Item -->
+        <div class='card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300'>
+          <img src='https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=800&auto=format&fit=crop' alt='Drink 1' class='w-full h-48 object-cover'>
+          <div class='p-4'>
+            <h3 class='font-semibold' style="font-family: 'Inter', sans-serif;">Espresso & Foam</h3>
+          </div>
+        </div>
+        <div class='card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300'>
+          <img src='https://images.unsplash.com/photo-1526312426766-14426147f2d8?q=80&w=800&auto=format&fit=crop' alt='Drink 2' class='w-full h-48 object-cover'>
+          <div class='p-4'><h3 class='font-semibold' style="font-family: 'Inter', sans-serif;">Matcha Pour</h3></div>
+        </div>
+        <div class='card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300'>
+          <img src='https://images.unsplash.com/photo-1504754528036-a5b1eaad1e2b?q=80&w=800&auto=format&fit=crop' alt='Drink 3' class='w-full h-48 object-cover'>
+          <div class='p-4'><h3 class='font-semibold' style="font-family: 'Inter', sans-serif;">Blueberry Pastry</h3></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id='lightbox' class='hidden fixed inset-0 bg-black/70 items-center justify-center z-40'>
+    <div class='bg-white rounded-lg overflow-hidden max-w-3xl mx-auto'>
+      <img id='lightboxImg' src='' alt='Lightbox' class='w-full'>
+      <button id='lightboxClose' class='absolute top-2 right-2 bg-gray-800 text-white rounded-full p-2'>✕</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class='bg-white border-t'>
+    <div class='max-w-7xl mx-auto px-4 py-6 flex items-center justify-between text-sm'>
+      <span class='text-gray-500'>&copy; 2025 Brew & Beans. All rights reserved.</span>
+      <div class='flex space-x-4'>
+        <a href='#' class='text-gray-500 hover:text-primary transition-all duration-300'>Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src='assets/js/app.js'></script>
+</body>
+</html>
