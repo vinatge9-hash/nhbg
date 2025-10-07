@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Brew & Beans - Contact</title>
+  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={theme:{extend:{colors:{primary:'#2563EB'}}}}</script>
+  <link rel='stylesheet' href='assets/css/style.css'>
+</head>
+<body class='bg-background text-text font-body'>
+  <!-- Header -->
+  <header class='fixed top-0 left-0 w-full bg-white/70 backdrop-blur-md border-b border-white/40 shadow-lg z-50'>
+    <div class='max-w-7xl mx-auto px-4 py-3 flex items-center justify-between'>
+      <a href='index.html' class='flex items-center space-x-2'>
+        <img src='assets/images/logo.png' alt='Brew & Beans' class='h-9 w-9'>
+        <span class='text-xl font-semibold' style="font-family: 'Inter', sans-serif;">Brew & Beans</span>
+      </a>
+      <nav class='hidden md:flex space-x-6'>
+        <a href='index.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Home</a>
+        <a href='menu.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Menu</a>
+        <a href='locations.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Locations</a>
+        <a href='gallery.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Gallery</a>
+        <a href='contact.html' class='text-gray-700 hover:text-primary transition-all duration-300'>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class='pt-28'>
+    <section class='max-w-4xl mx-auto px-4 py-8'>
+      <h1 class='text-3xl font-semibold' style="font-family: 'Inter', sans-serif;">Get in touch</h1>
+      <p class='text-gray-700 mt-2'>We'd love to hear from you. Send a message or sign up for our newsletter.</p>
+      <form class='mt-6 grid grid-cols-1 md:grid-cols-2 gap-4'>
+        <input class='border border-gray-300 rounded-md px-4 py-2' placeholder='Your name' required>
+        <input class='border border-gray-300 rounded-md px-4 py-2' placeholder='Email' type='email' required>
+        <textarea class='border border-gray-300 rounded-md px-4 py-2 col-span-2' placeholder='Message' rows='4' required></textarea>
+        <button class='col-span-2 md:col-auto bg-primary text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300'>Send Message</button>
+      </form>
+    </section>
+    <section class='max-w-4xl mx-auto px-4 py-6'>
+      <h2 class='text-xl font-semibold' style="font-family: 'Inter', sans-serif;">Newsletter</h2>
+      <p class='text-gray-700'>Sign up to receive updates and offers.</p>
+      <form class='mt-3 flex flex-col sm:flex-row gap-3'>
+        <input class='flex-1 border border-gray-300 rounded-md px-4 py-2' placeholder='Email address'>
+        <button class='bg-primary text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-300'>Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class='bg-white border-t'>
+    <div class='max-w-7xl mx-auto px-4 py-6 flex items-center justify-between text-sm'>
+      <span class='text-gray-500'>&copy; 2025 Brew & Beans. All rights reserved.</span>
+      <div class='flex space-x-4'>
+        <a href='#' class='text-gray-500 hover:text-primary transition-all duration-300'>Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src='assets/js/app.js'></script>
+</body>
+</html>
