@@ -1,0 +1,16 @@
+/* Minimal custom styles to complement Tailwind */
+:root {
+  --brand: #2563EB;
+}
+
+body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; }
+
+/* Glass-like reveal helper */
+.reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+/* Basic card aesthetic for consistency */
+.card { background: white; border-radius: 0.75rem; }
+
+/* Layout container utility (for pages without a global container) */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
